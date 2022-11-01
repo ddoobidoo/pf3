@@ -1,0 +1,90 @@
+/* 콘텐츠 내용강조 폰트 */
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 영어 제목 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 한글 제목 및 일반 콘텐츠 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+  background-color: #fcf9ee;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+  font-family: 'Pretendard-Regular';
+  }
+  header .wrap { 
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35px;
+    align-items: center;
+    /*! padding: 10px 70px; */
+    position: absolute;
+    z-index: 99;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 7.5%;
+    justify-content: space-between;
+  }
+  header .wrap h1.logo {
+    
+  }
+  header .wrap h1.logo a{
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    display: block;
+    font-size: 0;
+    margin-right: 25px;
+  }
+  header .wrap ul.menu {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  header .wrap ul.menu li {
+    
+  }
+  header .wrap ul.menu li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    /*! color: #fff; */
+  }
+  header .wrap a.go {
+    border: 1px solid;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px 45px;
+  }
+  header .wrap a.ham{
+    display: none;
+  }
+/*   header .wrap a.go:after{
+  content: "";
+  border: 1px solid;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(45deg);
+  border-bottom: transparent;
+  border-left: transparent;
+  } */

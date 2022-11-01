@@ -1,0 +1,375 @@
+/* 회사소개 */
+#company {
+  background-color: #b16c5c;
+  width: 100%;
+  }
+  #company::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #996559;
+    background-image: url(../img/rotate-text.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #company .wrap {
+    /*! display: flex; */
+    /*! justify-content: end; */
+    position: relative;
+  }
+  #company .wrap span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'GmarketSansMedium';
+    /*! border-left: 1px solid; */
+    /*! height: 500px; */
+    font-size: 0;
+  }
+  #company .wrap::before{
+    content: "scroll";
+    font-size: 18px;
+    /*! margin-left: 10px; */
+    color: #fff;
+  }
+  #company .wrap::after{
+    content: "";
+    border-left: 1px solid #fff;
+    width: 16px;
+    height: 285px;
+    display: block;
+    /*! border-left: transparent; */
+    /*! border-bottom: transparent; */
+    /*! transform: rotate(135deg); */
+    position: absolute;
+    top: 79px;
+    left: 0;
+  }
+  #company .wrap h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 315px 0 15px 0;
+    color: #fff;
+    font-family: 'GmarketSansMedium';
+  }
+  #company .wrap p{
+    line-height: 1.4;
+    /*! text-align: left; */
+    font-weight: lighter;
+    font-style: italic;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Pretendard-Regular";
+    padding-bottom: 15px;
+  }
+  #company .wrap a{
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: 'Pretendard-Regular';
+    color: #fff;
+    font-size: 18px;
+  }
+  #company .wrap a::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/arrow_right_w.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    background-position-y: 8px;
+  }
+
+/* 서비스 */
+#service {
+    border-top: 1px solid;
+    position: relative;
+    /*! border-bottom: 1px solid; */
+  }
+  #service .wrap:before{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+    top: 85px;
+    left: 0;
+  }
+  #service .wrap {
+    text-align: center;
+    padding-top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+  } 
+  #service .wrap h2 {
+    font-size: 25px;
+    color: #b16c5c;
+    font-weight: 500;
+    line-height: 3.4;
+    font-family: 'GmarketSansMedium';
+  }
+  #service .wrap p {
+
+  }
+  #service .wrap p.subject2{
+    display: none;
+  }
+  #service .wrap ul {
+    display: flex;
+    width: 100%;
+  }
+  #service .wrap ul li {
+    padding: 50px 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    border-right: 1px solid;
+    width:  calc(100% / 3);
+    margin-right: 0;
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+/*     background-position-y: 275px; */
+    position: relative;
+  }
+  #service .wrap ul li:nth-child(1){
+    background-image: url(../img/service1-1.png);
+  }
+  #service .wrap ul li:nth-child(2){
+    background-image: url(../img/service2-1.png);
+  }
+  #service .wrap ul li:nth-of-type(3){
+    background-image: url(../img/service3-1.png);
+    border-right:0;
+  }
+  #service .wrap ul li h3 {
+    display: block;
+    padding-bottom: 600px;
+    font-size: 22px;
+    text-align: left;
+    font-family: 'GmarketSansMedium';
+  }
+  #service .wrap ul li h3:after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    padding-top: 50px;
+  }
+  #service .wrap ul li p {
+    padding-top: 50px;
+    border-top: 1px solid;
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+  }
+  #service .wrap ul li .overcontents {
+    position: absolute;
+    top: 1px;
+    left: 0;    
+    height: 88%;
+    padding: 50px;
+    background-color: #fcf9ee;
+    opacity: 0;
+    transition: all 0.7s;
+  }
+  #service .wrap ul li:hover .overcontents{
+    opacity: 1;
+  }
+  #service .wrap ul li .overcontents h3 {
+    padding: 0;
+  }
+  #service .wrap ul li .overcontents p {
+    border-top: 0;
+    line-height: 1.6;
+  }
+  #service .wrap ul li .overcontents p.p {
+    padding-top: 50px;
+    border-top: 1px solid;
+  }
+  #service .wrap ul li .overcontents p.p2{
+    padding-top: 30px;
+  }
+  #service .wrap ul li .overcontents img {
+    display: block;
+    margin: 0 auto;
+    height: 210px;
+    padding: 93px 0;
+}
+
+/* 히스토리 */
+#history {
+  position: relative;
+  }
+  #history .wrap {
+    padding-top: 0;
+    text-align: center;
+    border-bottom: 1px solid;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #history .wrap:before{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+    top: 85px;
+    left: 0;
+  } 
+  #history .wrap h2 {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #b16c5c;
+    font-size: 25px;
+    color: #b16c5c;
+    font-weight: 500;
+    line-height: 3.4;
+    font-family: 'GmarketSansMedium';
+  }
+  #history .right{
+    display: flex;
+    border-bottom: 1px solid;
+    position: relative;
+  }
+  #history .right img{
+    border-top: 1px solid;
+  } 
+  #history .right ul.list {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    width: 30%;
+    padding: 180px 0px 50px 70px;
+    height: 100%;
+  } 
+  #history .right ul.list li {
+    line-height: 2.6;
+    font-size: 18px;
+    font-family: 'Pretendard-Regular';
+  }
+  #history .right ul.list li:before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #393939;
+    border-radius: 50%;
+    background: #fcf9ee;
+    margin-right: 10px;
+  }
+  #history .right h3{
+    content: "";
+    display: block;
+    text-align: initial;
+    padding: 180px 0 0 95px;
+    font-size: 30px;
+    line-height: 1.6;
+    font-family: "Pretendard-Regular";
+    border-left: 1px solid;
+  }
+  #history .right h3 span{
+    display: block;
+  }
+
+/* 오시는길 */
+#location {
+  position: relative;
+  /*! font-size: 25px; */
+  }
+  #location .wrap {
+
+  margin: 0;
+  width: 100%;
+  /*! border: ; */
+  box-sizing: border-box;
+  padding: 0;
+  }
+  #location .wrap iframe { 
+    width: 100%;
+    margin: 0;
+    height: 630px;
+  }
+  #location .wrap div.right {
+    position: absolute;
+    z-index: 3;
+    /*! border: 1px solid; */
+    background-color: #fcf9ee;
+    width: 400px;
+    height: 240px;
+    padding: 50px;
+    bottom: calc(50% - 170px);
+    left: 10%;
+    box-shadow: 10px 10px 10px #d6cec3;
+  }
+  #location .wrap div.right hgroup {
+
+  position: relative;
+  font-family: 'Pretendard-Regular';
+  }
+  #location .wrap div.right hgroup h2.subject {
+    font-size: 25px;
+    font-family: 'GmarketSansMedium';
+    line-height: 2;
+    color: #b16c5c;
+  }
+  #location .wrap div.right hgroup h3.subject2 {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  #location .wrap div.right p {
+    line-height: 2;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+  }
+  #location .wrap div.right p.p::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/loca.svg);
+    background-size: contain;
+    margin-right: 10px;
+  }
+  #location .wrap div.right p.time::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/time.svg);
+    background-size: contain;
+    margin-right: 10px;
+  }
+  #location .wrap div.right a {
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    line-height: 1.6;
+    width: 200px;
+    height: 40px;
+  }
+  #location .wrap div.right a::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/arrow_right.svg);
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    background-position-y: 7px;
+  }
+
+
+
+
+
